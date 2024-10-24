@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive\\GitHub\\AccessControlCountry\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D33CBFDC-742A-45F6-AEEC-592C323BAAA6}|WebServiceAccess\\WebServiceAccess.csproj|d:\\onedrive\\github\\accesscontrolcountry\\webserviceaccess\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33CBFDC-742A-45F6-AEEC-592C323BAAA6}|WebServiceAccess\\WebServiceAccess.csproj|solutionrelative:webserviceaccess\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33CBFDC-742A-45F6-AEEC-592C323BAAA6}|WebServiceAccess\\WebServiceAccess.csproj|d:\\onedrive\\github\\accesscontrolcountry\\webserviceaccess\\httpmodels\\httpuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33CBFDC-742A-45F6-AEEC-592C323BAAA6}|WebServiceAccess\\WebServiceAccess.csproj|solutionrelative:webserviceaccess\\httpmodels\\httpuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1124116791:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HttpUser.cs",
+              "DocumentMoniker": "D:\\OneDrive\\GitHub\\AccessControlCountry\\WebServiceAccess\\HttpModels\\HttpUser.cs",
+              "RelativeDocumentMoniker": "WebServiceAccess\\HttpModels\\HttpUser.cs",
+              "ToolTip": "D:\\OneDrive\\GitHub\\AccessControlCountry\\WebServiceAccess\\HttpModels\\HttpUser.cs",
+              "RelativeToolTip": "WebServiceAccess\\HttpModels\\HttpUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T02:13:51.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\OneDrive\\GitHub\\AccessControlCountry\\WebServiceAccess\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebServiceAccess\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\OneDrive\\GitHub\\AccessControlCountry\\WebServiceAccess\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebServiceAccess\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwEQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T02:03:40.463Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
