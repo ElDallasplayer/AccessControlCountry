@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿#region Dependencies
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using PrincipalObjects;
+using PrincipalObjects.HttpObjects;
 using PrincipalObjects.Objects;
 using System.Net.Http;
 using System.Text;
+#endregion
 
 namespace AccessControlFront.Controllers
 {
@@ -19,8 +22,6 @@ namespace AccessControlFront.Controllers
 
         public UserController(ILogger<UserController> logger, IConfiguration configuration)
         {
-            Security.GenerateKey_Iv();
-
             _logger = logger;
             _configuration = configuration;
             _httpClient = new HttpClient();
@@ -28,23 +29,36 @@ namespace AccessControlFront.Controllers
         }
         #endregion
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            CreateUserAPI(new User()
-            {
-                userName = "Admin",
-                userPassword = Security.Encrypt("Delunoalocho"),
-                userPermissions = 1,
-                userRol = 1
-            });
+            //await CreateUserAPI(new User()
+            //{
+            //    userName = "Admin",
+            //    passwordAsString = "Admin",
+            //    userPassword = null,
+            //    userPermissions = 1,
+            //    userRol = 1
+            //});
 
             return View();
         }
 
-        public JsonResult LoginUser(string _user, string _password)
+        public async Task<JsonResult> LoginUser(string _user, string _password)
         {
+            var json = JsonConvert.SerializeObject(new HttpUser() { UserName = _user, UserPassword = _password });
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            return Json(new { result = "OK" });
+            var response = await _httpClient.PostAsync($"{_webService}Users/ValidateUser", content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var resultContent = await response.Content.ReadAsStringAsync();
+                return Json(new { response = "OK", content = resultContent, message = "Login success" });
+            }
+            else
+            {
+                return Json(new { response = "ERROR", content = "", message = "The user do not exist", error = $"Error: {response.StatusCode}" });
+            }
         }
 
         [HttpPost]
@@ -53,7 +67,7 @@ namespace AccessControlFront.Controllers
             var json = JsonConvert.SerializeObject(user);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync($"{_webService}api/CreateUser", content);
+            var response = await _httpClient.PostAsync($"{_webService}Users/CreateUser", content);
 
             if (response.IsSuccessStatusCode)
             {

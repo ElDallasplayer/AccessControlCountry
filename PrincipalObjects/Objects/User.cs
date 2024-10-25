@@ -1,23 +1,24 @@
-﻿
+﻿#region Dependencies
 using Dapper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
+#endregion
 
 namespace PrincipalObjects.Objects
 {
     public class User
     {
         #region Properties
-        public int userId {  get; set; }
-        public string userName {  get; set; }
-        public byte[] userPassword {  get; set; }
-        public string _passwordAsString { get; set; }
-        public int userRol {  get; set; }
-        public int userPermissions {  get; set; }
+        public int userId { get; set; }
+        public string userName { get; set; }
+        public string userPassword { get; set; } //BASE 64
+        public int userRol { get; set; }
+        public int userPermissions { get; set; }
+
+        public string passwordAsString { get; set; }
         #endregion
 
         public User() { }
@@ -35,25 +36,38 @@ namespace PrincipalObjects.Objects
                     return users.ToList();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return null;
             }
         }
 
-        public async Task<User> ValidateUser(string user,string password)
+        public async Task<User> ValidateUser(string user, string password)
         {
             try
             {
-                byte[] encryptedPassword = Security.Encrypt(password);
-
-                var query = $"SELECT userId, userName, userPassword, userRol, userPermissions FROM Users WHERE userName like '{user}' and userPassword = {encryptedPassword}";
+                var query = "SELECT userId, userName, userPassword, userRol, userPermissions FROM Users WHERE LOWER(userName) = LOWER(@UserName)";
 
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     await connection.OpenAsync();
-                    var userToReturn = await connection.QueryFirstAsync<User>(query);
-                    return userToReturn;
+
+                    var userRecord = await connection.QueryFirstOrDefaultAsync<User>(query, new
+                    {
+                        UserName = user
+                    });
+
+                    if (userRecord != null)
+                    {
+                        string decryptedPassword = Security.DecryptFromBase64(userRecord.userPassword);
+
+                        if (decryptedPassword == password)
+                        {
+                            return userRecord;
+                        }
+                    }
+
+                    return null;
                 }
             }
             catch (Exception ex)
@@ -66,7 +80,7 @@ namespace PrincipalObjects.Objects
         {
             try
             {
-                var query = 
+                var query =
                     "INSERT INTO Users (userName, userPassword, userRol, userPermissions)" +
                     " VALUES (@UserName, @UserPassword, @UserRol, @UserPermissions); SELECT CAST(SCOPE_IDENTITY() as int)";
 
@@ -76,7 +90,7 @@ namespace PrincipalObjects.Objects
                     var userId = await connection.QuerySingleAsync<int>(query, new
                     {
                         UserName = userToInsert.userName,
-                        UserPassword = userToInsert.userPassword,
+                        UserPassword = Security.EncryptToBase64(userToInsert.passwordAsString), // Guardar en Base64
                         UserRol = userToInsert.userRol,
                         UserPermissions = userToInsert.userPermissions
                     });

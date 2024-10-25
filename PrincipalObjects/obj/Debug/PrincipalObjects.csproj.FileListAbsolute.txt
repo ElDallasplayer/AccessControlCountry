@@ -10,7 +10,9 @@ D:\OneDrive\AccessControlFront\PrincipalObjects\obj\Debug\PrincipalObjects.pdb
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\PrincipalObjects.dll
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\PrincipalObjects.pdb
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\Dapper.dll
+D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\Newtonsoft.Json.dll
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\Dapper.xml
+D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\bin\Debug\Newtonsoft.Json.xml
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\obj\Debug\PrincipalObjects.csproj.AssemblyReference.cache
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\obj\Debug\PrincipalObjects.csproj.CoreCompileInputs.cache
 D:\OneDrive\GitHub\AccessControlCountry\PrincipalObjects\obj\Debug\Principa.3A6929E9.Up2Date

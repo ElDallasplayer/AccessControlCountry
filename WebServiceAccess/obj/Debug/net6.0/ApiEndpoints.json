@@ -37,7 +37,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "WebServiceAccess.HttpModels.HttpUser",
+        "Type": "PrincipalObjects.HttpObjects.HttpUser",
         "IsRequired": true
       }
     ],

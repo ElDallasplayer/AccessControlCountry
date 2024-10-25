@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿#region Dependencies
+using Microsoft.AspNetCore.Mvc;
 using PrincipalObjects;
+using PrincipalObjects.HttpObjects;
 using PrincipalObjects.Objects;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using WebServiceAccess.HttpModels;
+#endregion
 
 namespace WebServiceAccess.Controllers
 {
@@ -17,7 +16,6 @@ namespace WebServiceAccess.Controllers
         public UsersController(ILogger<UsersController> logger)
         {
             _logger = logger;
-            Security.GenerateKey_Iv();
         }
 
         [HttpGet(Name = "GetUsers")]
@@ -45,7 +43,6 @@ namespace WebServiceAccess.Controllers
         {
             try
             {
-                // Aquí necesitas definir la variable password
                 User userToReturn = await new User().ValidateUser(request.UserName, request.UserPassword);
 
                 if (userToReturn == null)
@@ -62,16 +59,16 @@ namespace WebServiceAccess.Controllers
         }
 
         [HttpPost("CreateUser", Name = "CreateUser")]
-        public async Task<IActionResult> CreateUser([FromBody] HttpUserCreate request)
+        public async Task<IActionResult> CreateUser([FromBody] User request)
         {
             try
             {
                 User userToReturn = await new User().InsertUserInDatabase(new User()
                     {
-                        userName = request.UserName,
-                        userPassword = Security.Encrypt(request.UserPassword),
-                        userPermissions = request.Permissions,
-                        userRol = request.Rol
+                        userName = request.userName,
+                        passwordAsString = request.passwordAsString,
+                        userPermissions = request.userPermissions,
+                        userRol = request.userRol
                     });
 
                 if (userToReturn == null)
