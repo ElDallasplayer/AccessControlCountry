@@ -1,0 +1,19 @@
+﻿.principal-left-box-container {
+
+}
+
+
+.hide-show-box-button {
+    position: relative;
+    padding: 0;
+    background-color: var(--neutral-gray);
+    width: 60px;
+    height: 60px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    top: -60px;
+    cursor: pointer;
+    z-index: 2;
+    
+    transition: 0.5s;
+}

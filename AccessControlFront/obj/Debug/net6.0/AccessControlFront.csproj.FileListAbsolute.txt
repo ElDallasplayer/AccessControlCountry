@@ -28,6 +28,7 @@ D:\OneDrive\AccessControlFront\AccessControlFront\obj\Debug\net6.0\refint\Access
 D:\OneDrive\AccessControlFront\AccessControlFront\obj\Debug\net6.0\AccessControlFront.pdb
 D:\OneDrive\AccessControlFront\AccessControlFront\obj\Debug\net6.0\AccessControlFront.genruntimeconfig.cache
 D:\OneDrive\AccessControlFront\AccessControlFront\obj\Debug\net6.0\ref\AccessControlFront.dll
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.csproj.AssemblyReference.cache
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\appsettings.Development.json
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\appsettings.json
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\AccessControlFront.staticwebassets.runtime.json
@@ -41,7 +42,6 @@ D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\Prin
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\Dapper.dll
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\PrincipalObjects.pdb
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\bin\Debug\net6.0\Dapper.xml
-D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.csproj.AssemblyReference.cache
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.GeneratedMSBuildEditorConfig.editorconfig
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.AssemblyInfoInputs.cache
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.AssemblyInfo.cs
@@ -66,3 +66,8 @@ D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\refi
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.pdb
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\AccessControlFront.genruntimeconfig.cache
 D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\ref\AccessControlFront.dll
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\scopedcss\Views\Components\Home\_employeeListAside.cshtml.rz.scp.css
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\scopedcss\Views\Components\Home\_assistanceListAside.cshtml.rz.scp.css
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\scopedcss\Views\Components\Home\_accessListAside.cshtml.rz.scp.css
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\scopedcss\Views\Components\Home\_visitListAside.cshtml.rz.scp.css
+D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\obj\Debug\net6.0\scopedcss\Views\Components\Home\_leftBottomContainer.cshtml.rz.scp.css

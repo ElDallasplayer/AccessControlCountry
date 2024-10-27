@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ofb3M5jpXMEVN+ZGfqzj5CXfl4IgV3BMYkXcnpNcsAQ=",
+  "Hash": "TkTRIdsE3mDstFkZ2dF38XXM1Ek3eyKD/eUoFt7yNGs=",
   "Source": "AccessControlFront",
   "BasePath": "_content/AccessControlFront",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AccessControlFront.bundle.scp.css"
     },
     {
+      "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\css\\Home\\Index.css",
+      "SourceId": "AccessControlFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\",
+      "BasePath": "_content/AccessControlFront",
+      "RelativePath": "css/Home/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home\\Index.css"
+    },
+    {
       "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\css\\site.css",
       "SourceId": "AccessControlFront",
       "SourceType": "Discovered",
@@ -93,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\HomeIndex.js",
+      "SourceId": "AccessControlFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\",
+      "BasePath": "_content/AccessControlFront",
+      "RelativePath": "js/HomeIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\HomeIndex.js"
+    },
+    {
       "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\site.js",
       "SourceId": "AccessControlFront",
       "SourceType": "Discovered",
@@ -110,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\UserIndex.js",
+      "SourceId": "AccessControlFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\",
+      "BasePath": "_content/AccessControlFront",
+      "RelativePath": "js/UserIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UserIndex.js"
     },
     {
       "Identity": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

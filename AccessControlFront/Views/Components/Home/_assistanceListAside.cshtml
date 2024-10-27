@@ -1,0 +1,18 @@
+﻿<div class="row p-0 m-0 lateral-menu principal-container-assistance personal-shadow">
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0 hide-and-show-assistance-button">
+            <i class="mdi mdi-account-clock assistance-icon"></i><span class="text-assistance">Assistance</span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".hide-and-show-assistance-button").on("click", (e) => {
+            e.stopImmediatePropagation();
+            
+            $(".principal-container-assistance").toggleClass("show-left-menu-option")
+        })
+    })
+</script>

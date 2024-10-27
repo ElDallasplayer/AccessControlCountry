@@ -43,6 +43,7 @@ namespace AccessControlFront.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<JsonResult> LoginUser(string _user, string _password)
         {
             var json = JsonConvert.SerializeObject(new HttpUser() { UserName = _user, UserPassword = _password });
@@ -53,7 +54,7 @@ namespace AccessControlFront.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var resultContent = await response.Content.ReadAsStringAsync();
-                return Json(new { response = "OK", content = resultContent, message = "Login success" });
+                return Json(new { response = "OK", content = resultContent, message = "Login success", redirectUrl = "/Home/Index" });
             }
             else
             {

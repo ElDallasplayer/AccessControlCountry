@@ -14,4 +14,13 @@
     <ProjectReference Include="..\PrincipalObjects\PrincipalObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Components\Shared\" />
+    <Folder Include="Views\Components\User\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Home\Index.css" />
+  </ItemGroup>
+
 </Project>

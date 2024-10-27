@@ -1,0 +1,17 @@
+﻿<div class="principal-left-box-container">
+    <div class="hide-show-box-button"> </div>
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function (){
+        $(".hide-show-box-button").on("click", (e) =>{
+            e.stopImmediatePropagation();
+            $(".left-bottom-view-container").toggleClass("hide-left-container")
+        })
+    })
+</script>

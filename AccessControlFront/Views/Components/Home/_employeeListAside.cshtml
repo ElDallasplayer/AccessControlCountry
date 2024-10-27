@@ -1,0 +1,18 @@
+﻿<div class="row p-0 m-0 lateral-menu principal-container-employee personal-shadow">
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0 hide-and-show-employee-button">
+            <i class="mdi mdi-account-tie employee-icon"></i><span class="text-employee"> Employees </span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".hide-and-show-employee-button").on("click", (e) => {
+            e.stopImmediatePropagation();
+
+            $(".principal-container-employee").toggleClass("show-left-menu-option")
+        })
+    })
+</script>

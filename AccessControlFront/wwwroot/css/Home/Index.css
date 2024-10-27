@@ -1,0 +1,36 @@
+﻿body{
+    overflow: hidden;
+}
+
+#map {
+    position: fixed;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.components-container-home-index{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-bottom-view-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 25%;
+    background-color: var(--neutral-gray);
+    border-top-right-radius: 0.5rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hide-left-container {
+    transition: 0.5s;
+    transform: translateY(100%);
+}

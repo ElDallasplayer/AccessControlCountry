@@ -1,5 +1,16 @@
 [
   {
+    "ContainingType": "WebServiceAccess.Controllers.GlobalOptionsController",
+    "Method": "Get",
+    "RelativePath": "GlobalOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetGlobalOptions"
+  },
+  {
     "ContainingType": "WebServiceAccess.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "Users",
@@ -43,26 +54,5 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "ValidateUser"
-  },
-  {
-    "ContainingType": "WebServiceAccess.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebServiceAccess.WeatherForecast, WebServiceAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

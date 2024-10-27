@@ -1,3 +1,16 @@
+:root {
+    --primary-blue: #007BFF;
+    --light-blue: #85C1FF;
+    --dark-blue: #003B5C;
+    --neutral-gray: #F5F5F5;
+    --white: #FFFFFF;
+    --golden-yellow: #FFC107;
+    --soft-green: #28A745;
+    --coral-red: #FF6F61;
+    --lavender: #E6E6FA;
+    --deep-purple: #6F42C1;
+}
+
 html {
   font-size: 14px;
 }
@@ -14,5 +27,20 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+}
+
+.container {
+    padding: 0;
+    position: absolute !important;
+    width: 100%;
+    height: auto;
+    max-width: 100% !important
+}
+
+.personal-shadow {
+    background-color: white; /* Color de fondo del formulario */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 20px; /* Margen externo */
 }

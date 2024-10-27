@@ -9,43 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AccessControlFront
 build_property.RootNamespace = AccessControlFront
-build_property.ProjectDir = d:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\
+build_property.ProjectDir = D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\OneDrive\GitHub\AccessControlCountry\AccessControlFront
+build_property.MSBuildProjectDirectory = D:\OneDrive\GitHub\AccessControlCountry\AccessControlFront
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Home/Index.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Home/Privacy.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/Error.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/User/Index.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/_ViewImports.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/_ViewStart.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/_Layout.cshtml]
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Components/Home/_accessListAside.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIb21lXF9hY2Nlc3NMaXN0QXNpZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dcukaku2fz
+
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Components/Home/_assistanceListAside.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIb21lXF9hc3Npc3RhbmNlTGlzdEFzaWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-9wvkpo0dm4
+
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Components/Home/_employeeListAside.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIb21lXF9lbXBsb3llZUxpc3RBc2lkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-0g48r7lith
+
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Components/Home/_leftBottomContainer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIb21lXF9sZWZ0Qm90dG9tQ29udGFpbmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-dwph4hhdor
+
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Components/Home/_visitListAside.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xIb21lXF92aXNpdExpc3RBc2lkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-g55sg9x6og
+
+[D:/OneDrive/GitHub/AccessControlCountry/AccessControlFront/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qp8uwrmc35

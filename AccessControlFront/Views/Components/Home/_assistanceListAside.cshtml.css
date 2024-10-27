@@ -1,0 +1,53 @@
+﻿.principal-container-assistance {
+    position: absolute;
+    background-color: var(--neutral-gray);
+    width: 30vw;
+    height: 100vh;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.assistance-icon {
+    display: flex;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+}
+
+.show-left-menu-option {
+    transform: translateX(0);
+    z-index: 5 !important;
+}
+
+.hide-and-show-assistance-button {
+    background-color: var(--coral-red);
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.hide-and-show-assistance-button:hover {
+    width: 200px;
+}
+
+.text-assistance {
+    color: white;
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hide-and-show-assistance-button:hover .text-assistance {
+    display: block;
+}

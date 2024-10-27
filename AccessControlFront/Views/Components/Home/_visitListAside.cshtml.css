@@ -1,0 +1,53 @@
+﻿.principal-container-visit {
+    position: absolute;
+    background-color: var(--neutral-gray);
+    width: 30vw;
+    height: 100vh;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.visit-icon {
+    display: flex;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+}
+
+.show-left-menu-option {
+    transform: translateX(0);
+    z-index: 5 !important;
+}
+
+.hide-and-show-visit-button {
+    background-color: var(--soft-green);
+    position: absolute;
+    top: 250px;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.hide-and-show-visit-button:hover {
+    width: 200px;
+}
+
+.text-visit {
+    color: white;
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hide-and-show-visit-button:hover .text-visit {
+    display: block;
+}

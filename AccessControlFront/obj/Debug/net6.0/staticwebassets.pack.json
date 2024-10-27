@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\AccessControlFront.bundle.scp.css"
     },
     {
+      "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\css\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Index.css"
+    },
+    {
       "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\HomeIndex.js",
+      "PackagePath": "staticwebassets\\js\\HomeIndex.js"
+    },
+    {
+      "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\UserIndex.js",
+      "PackagePath": "staticwebassets\\js\\UserIndex.js"
     },
     {
       "Id": "D:\\OneDrive\\GitHub\\AccessControlCountry\\AccessControlFront\\wwwroot\\js\\site.js",

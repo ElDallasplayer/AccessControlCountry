@@ -1,0 +1,18 @@
+﻿<div class="row p-0 m-0 lateral-menu principal-container-visit personal-shadow">
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0 hide-and-show-visit-button">
+            <i class="mdi mdi-badge-account visit-icon"></i><span class="text-visit">Visit</span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".hide-and-show-visit-button").on("click", (e) => {
+            e.stopImmediatePropagation();
+
+            $(".principal-container-visit").toggleClass("show-left-menu-option")
+        })
+    })
+</script>

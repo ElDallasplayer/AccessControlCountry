@@ -1,0 +1,53 @@
+.principal-container-access[b-dcukaku2fz] {
+    position: absolute;
+    background-color: var(--neutral-gray);
+    width: 30vw;
+    height: 100vh;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.access-icon[b-dcukaku2fz] {
+    display: flex;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+}
+
+.show-left-menu-option[b-dcukaku2fz] {
+    transform: translateX(0);
+    z-index: 5 !important;
+}
+
+.hide-and-show-access-button[b-dcukaku2fz] {
+    background-color: var(--deep-purple);
+    position: absolute;
+    top: 200px;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.hide-and-show-access-button:hover[b-dcukaku2fz] {
+    width: 200px;
+}
+
+.text-access[b-dcukaku2fz] {
+    color: white;
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hide-and-show-access-button:hover .text-access[b-dcukaku2fz] {
+    display: block;
+}

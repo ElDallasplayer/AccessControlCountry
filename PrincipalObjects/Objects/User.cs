@@ -31,7 +31,7 @@ namespace PrincipalObjects.Objects
 
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    connection.OpenAsync();
+                    await connection.OpenAsync();
                     var users = await connection.QueryAsync<User>(query);
                     return users.ToList();
                 }
