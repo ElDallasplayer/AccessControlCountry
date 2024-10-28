@@ -51,3 +51,7 @@
 .hide-and-show-employee-button:hover .text-employee {
     display: block;
 }
+
+.lateral-menu-option {
+    background-color: var(--dark-blue);
+}

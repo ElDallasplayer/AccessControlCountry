@@ -18,9 +18,6 @@
                 _password: password
             },
             success: function (response) {
-
-                console.log(response);
-
                 if (response.response == "OK") {
                     window.location.href = response.redirectUrl;
                 } else {

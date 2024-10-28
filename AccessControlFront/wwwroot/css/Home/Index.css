@@ -25,9 +25,8 @@
     background-color: var(--neutral-gray);
     border-top-right-radius: 0.5rem;
     color: white;
-    padding: 10px;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hide-left-container {

@@ -51,3 +51,8 @@
 .hide-and-show-assistance-button:hover .text-assistance[b-9wvkpo0dm4] {
     display: block;
 }
+
+
+.lateral-menu-option[b-9wvkpo0dm4] {
+    background-color: var(--coral-red);
+}

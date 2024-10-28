@@ -1,22 +1,35 @@
-﻿@{
+﻿@using Syncfusion.EJ2
+@{
     ViewData["Title"] = "LogIn Page";
+    ViewData["HideNavBar"] = "Hide";
 }
 
+<link href="~/css/User/Index.css" rel="stylesheet" />
+@Html.EJS().Grid("Grid").Render()
 <div class="text-center">
-    <div class="row p-0 m-0 justify-content-center">
-        <div class="col-6 p-0 m-0">
-            <div class="row m-5 d-flex justify-content-center">
-                <div class="col-11 p-0 m-0">
-                    <form asp-controller="User" asp-action="LoginUser">
-                        <label>User:</label>
-                        <input name="_user" class="form-control" type="text" placeholder="User..." />
-                        <label>Password:</label>
-                        <input name="_password" class="form-control" type="text" placeholder="Password..." />
+    <div class="row p-0 m-0 justify-content-center form-container">
+        <div class="col-10 p-0 m-0">
+            <div class="row p-0 m-0 personal-shadow-rounded form-box">
+                <div class="col-12 col-md-6 p-0 m-0">
+                    <div>
+                        <img class="login-image" src="~/img/img_webpage.png" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 m-0">
+                    <div class="row m-5 d-flex justify-content-center">
+                        <div class="col-11 p-0 m-0">
+                            <form asp-controller="User" asp-action="LoginUser">
+                                <label class="form-login-label">User:</label>
+                                <input name="_user" class="form-control" type="text" placeholder="User..." />
+                                <label class="form-login-label">Password:</label>
+                                <input name="_password" class="form-control" type="text" placeholder="Password..." />
 
-                        <div class="row p-0 m-0 mt-2 w-100">
-                            <button type="submit" class="btn btn-success">LOG IN</button>
+                                <div class="row p-0 m-0 mt-2 w-100">
+                                    <button type="submit" class="btn btn-success button-sender">LOG IN</button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

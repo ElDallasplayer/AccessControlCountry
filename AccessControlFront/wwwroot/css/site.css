@@ -38,9 +38,46 @@ body {
 }
 
 .personal-shadow {
-    background-color: white; /* Color de fondo del formulario */
-    border-radius: 0.5rem; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: 20px; /* Margen externo */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.personal-shadow-rounded {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.lateral-menu{
+    background-color: var(--neutral-gray);
+}
+
+.lateral-menu-option{
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lateral-menu-option:hover{
+    transform: scale(1.05);
+}
+
+.option-icon {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center
+}
+
+.text-option-container{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

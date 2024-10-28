@@ -3,7 +3,24 @@
         <div class="row p-0 m-0 hide-and-show-assistance-button">
             <i class="mdi mdi-account-clock assistance-icon"></i><span class="text-assistance">Assistance</span>
         </div>
-
+        <div class="row p-0 m-0 justify-content-center">
+            <div class="col-11 p-0 m-0">
+                <div class="row p-0 m-0 justify-content-center">
+                    <div class="col-12 p-0 m-0 lateral-menu-option personal-shadow-rounded">
+                        <div class="elements-container">
+                            <div class="row p-0 m-0">
+                                <div class="col-2 icon-option-container">
+                                    <i class="mdi mdi-account-network option-icon"></i>
+                                </div>
+                                <div class="col text-option-container">
+                                    <span>List of <span class="text-global-container-assistance-list">Assistences</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -14,5 +31,8 @@
             
             $(".principal-container-assistance").toggleClass("show-left-menu-option")
         })
+
+        $(".text-assistance").html(_globalOptions.goSecondOption);
+        $(".text-global-container-assistance-list").html(_globalOptions.goSecondOption);
     })
 </script>

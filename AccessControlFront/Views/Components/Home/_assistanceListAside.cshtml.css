@@ -51,3 +51,8 @@
 .hide-and-show-assistance-button:hover .text-assistance {
     display: block;
 }
+
+
+.lateral-menu-option {
+    background-color: var(--coral-red);
+}

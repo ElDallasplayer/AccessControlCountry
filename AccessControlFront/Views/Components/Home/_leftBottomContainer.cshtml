@@ -1,5 +1,7 @@
 ﻿<div class="principal-left-box-container">
-    <div class="hide-show-box-button"> </div>
+    <div class="hide-show-box-button" data-toggle="tooltip" data-placement="top" title="Conected accounts">
+        <span><i class="mdi mdi-account-network"></i></span>
+    </div>
     <div class="col-12 p-0 m-0">
         <div class="row p-0 m-0">
 
@@ -12,6 +14,8 @@
         $(".hide-show-box-button").on("click", (e) =>{
             e.stopImmediatePropagation();
             $(".left-bottom-view-container").toggleClass("hide-left-container")
+
+            $('[data-toggle="tooltip"]').tooltip()
         })
     })
 </script>

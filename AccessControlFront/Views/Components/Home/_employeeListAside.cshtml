@@ -3,7 +3,24 @@
         <div class="row p-0 m-0 hide-and-show-employee-button">
             <i class="mdi mdi-account-tie employee-icon"></i><span class="text-employee"> Employees </span>
         </div>
-
+        <div class="row p-0 m-0 justify-content-center">
+            <div class="col-11 p-0 m-0">
+                <div class="row p-0 m-0 justify-content-center">
+                    <div id="first-list-option" class="col-12 p-0 m-0 lateral-menu-option personal-shadow-rounded">
+                        <div class="elements-container">
+                            <div class="row p-0 m-0">
+                                <div class="col-2 icon-option-container">
+                                    <i class="mdi mdi-account-network option-icon"></i>
+                                </div>
+                                <div class="col text-option-container">
+                                    <span><span class="text-global-container-employee-list">Employees </span>List</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -13,6 +30,15 @@
             e.stopImmediatePropagation();
 
             $(".principal-container-employee").toggleClass("show-left-menu-option")
+        })
+
+        $(".text-employee").html(_globalOptions.goFirstOption);
+        $(".text-global-container-employee-list").html(_globalOptions.goFirstOption);
+
+        $("#first-list-option").on("click", (e) =>{
+            e.stopImmediatePropagation();
+        
+            window.location.href = _baseUrl + "/Employee/EmployeeList";
         })
     })
 </script>

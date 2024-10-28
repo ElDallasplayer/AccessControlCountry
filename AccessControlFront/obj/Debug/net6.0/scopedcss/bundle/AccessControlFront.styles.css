@@ -106,6 +106,11 @@
 .hide-and-show-assistance-button:hover .text-assistance[b-9wvkpo0dm4] {
     display: block;
 }
+
+
+.lateral-menu-option[b-9wvkpo0dm4] {
+    background-color: var(--coral-red);
+}
 /* _content/AccessControlFront/Views/Components/Home/_employeeListAside.cshtml.rz.scp.css */
 .principal-container-employee[b-0g48r7lith] {
     position: absolute;
@@ -160,11 +165,21 @@
 .hide-and-show-employee-button:hover .text-employee[b-0g48r7lith] {
     display: block;
 }
+
+.lateral-menu-option[b-0g48r7lith] {
+    background-color: var(--dark-blue);
+}
 /* _content/AccessControlFront/Views/Components/Home/_leftBottomContainer.cshtml.rz.scp.css */
 .principal-left-box-container[b-dwph4hhdor] {
 
 }
 
+.mdi-account-network[b-dwph4hhdor]{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+}
 
 .hide-show-box-button[b-dwph4hhdor] {
     position: relative;
@@ -175,9 +190,9 @@
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     top: -60px;
+    left: 10px;
     cursor: pointer;
     z-index: 2;
-    
     transition: 0.5s;
 }
 /* _content/AccessControlFront/Views/Components/Home/_visitListAside.cshtml.rz.scp.css */
