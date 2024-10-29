@@ -1,9 +1,7 @@
 ﻿#region Dependencies
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using PrincipalObjects.HttpObjects;
 using PrincipalObjects.Objects;
-using System.Text;
 #endregion
 
 namespace AccessControlFront.Controllers
@@ -44,6 +42,20 @@ namespace AccessControlFront.Controllers
             }
 
             return View("~/Views/Components/Employee/Tables/_EmployeesTableView.cshtml", employeeList);
+        }
+
+        public async Task<IActionResult> EditEmployee(int id)
+        {
+            var response = await _httpClient.GetAsync($"{_webService}Employees/GetEmployeeById?id={id}");
+            Employee employee = new Employee();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var resultContent = await response.Content.ReadAsStringAsync();
+                employee = JsonConvert.DeserializeObject<Employee>(resultContent);
+            }
+
+            return View("~/Views/Employee/EditEmployee.cshtml", employee);
         }
     }
 }

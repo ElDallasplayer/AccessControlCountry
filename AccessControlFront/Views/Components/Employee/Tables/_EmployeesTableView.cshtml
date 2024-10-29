@@ -1,6 +1,4 @@
-﻿@using PrincipalObjects.Objects
-@using Syncfusion.EJ2
-@Html.EJS().Grid("Grid").Render()
+﻿@Html.EJS().Grid("Grid").Render()
 
 @model List<Employee>
 
@@ -13,11 +11,17 @@
         col.Field("empId").HeaderText("ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
         col.Field("empName").HeaderText("EmpName").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
         col.Field("empSurname").HeaderText("EmpSurname").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
-        }).AllowPaging(true).AllowSorting(true).PageSettings(page => page.PageSize(5)).RowSelected("onRowSelected").Render()
+    }).AllowPaging(true).AllowSorting(true).PageSettings(page => page.PageSize(5)).RowSelected("onRowSelected").Render()
 
 <script>
     function onRowSelected(args) {
-        console.log(args)
         console.log("Selected:", args.data);
+        $.ajax({ 
+            url : _baseUrl + "/Employee/EditEmployee?id=" + args.data.empId,
+            type: "get",
+            success: function (response) {
+                $(".edit-container").append(response);
+            }
+        })
     }
 </script>

@@ -46,5 +46,24 @@ namespace PrincipalObjects.Objects
                 return null;
             }
         }
+
+        public async Task<Employee> GetEmployeeById(int id)
+        {
+            try
+            {
+                var query = $"SELECT empId, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees WHERE empId = {id}";
+
+                using (var connection = DatabaseConnection.GetConnection())
+                {
+                    await connection.OpenAsync();
+                    var employees = await connection.QuerySingleAsync<Employee>(query);
+                    return employees;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

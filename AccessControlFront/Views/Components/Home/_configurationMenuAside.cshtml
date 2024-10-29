@@ -1,0 +1,26 @@
+﻿<div class="row p-0 m-0 lateral-menu principal-container-config personal-shadow">
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0 hide-and-show-config-button">
+            <i class="mdi mdi-cog config-icon"></i><span class="text-config">Configurations</span>
+        </div>
+        <div class="row p-0 m-0 justify-content-center">
+            <div class="col-11 p-0 m-0">
+                <div class="row p-0 m-0 justify-content-center">
+                    <div class="col-12 p-0 m-0">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".hide-and-show-config-button").on("click", (e) => {
+            e.stopImmediatePropagation();
+
+            $(".principal-container-config").toggleClass("show-left-menu-option")
+        })
+    })
+</script>

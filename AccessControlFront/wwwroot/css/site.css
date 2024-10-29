@@ -9,6 +9,7 @@
     --coral-red: #FF6F61;
     --lavender: #E6E6FA;
     --deep-purple: #6F42C1;
+    --black: #1b1b1b;
 }
 
 html {
@@ -31,7 +32,7 @@ body {
 
 .container {
     padding: 0;
-    position: absolute !important;
+    /*position: absolute !important;*/
     width: 100%;
     height: auto;
     max-width: 100% !important

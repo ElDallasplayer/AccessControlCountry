@@ -33,5 +33,25 @@ namespace WebServiceAccess.Controllers
                 return StatusCode(500, "Internal Server Error: " + ex.Message);
             }
         }
+
+        [HttpGet("GetEmployeeById",Name = "GetEmployeeById")]
+        public async Task<IActionResult> GetEmployeeById(int id)
+        {
+            try
+            {
+                Employee employeeToReturn = await new Employee().GetEmployeeById(id);
+
+                if (employeeToReturn == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(employeeToReturn);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal Server Error: " + ex.Message);
+            }
+        }
     }
 }

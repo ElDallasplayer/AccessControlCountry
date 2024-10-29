@@ -1,0 +1,20 @@
+﻿<div class="row p-0 m-0 lateral-menu principal-container-eventual personal-shadow">
+    <div class="col-12 p-0 m-0">
+        <div class="row p-0 m-0 hide-and-show-eventual-button">
+            <i class="mdi mdi-account-tie-outline eventual-icon"></i><span class="text-eventual">Eventuals</span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".hide-and-show-eventual-button").on("click", (e) => {
+            e.stopImmediatePropagation();
+
+            $(".principal-container-eventual").toggleClass("show-left-menu-option")
+        })
+
+        $(".text-eventual").html(_globalOptions.goEnventualOption);
+    })
+</script>

@@ -1,1 +1,5 @@
-﻿
+﻿.edit-container{
+    position:absolute;
+    margin: 10rem !important;
+    top: 100px !important;
+}

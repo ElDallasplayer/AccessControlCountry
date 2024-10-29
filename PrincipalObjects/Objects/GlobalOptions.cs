@@ -16,6 +16,7 @@ namespace PrincipalObjects.Objects
         public string goSecondOption { get; set; }
         public string goThirdOption { get; set; }
         public string goFourthOption { get; set; }
+        public string goEventualOption { get; set; }
         public string goCompanyName { get; set; }
         #endregion
 
@@ -25,7 +26,7 @@ namespace PrincipalObjects.Objects
         {
             try
             {
-                var query = "SELECT goAppName,goFirstOption,goSecondOption,goThirdOption,goFourthOption,goCompanyName FROM GlobalOptions";
+                var query = "SELECT goAppName,goFirstOption,goSecondOption,goThirdOption,goFourthOption,goEventualOption,goCompanyName FROM GlobalOptions";
 
                 using (var connection = DatabaseConnection.GetConnection())
                 {
