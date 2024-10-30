@@ -14,8 +14,15 @@
                 <div class="row p-0 m-0 justify-content-center">
                     <div class="col-11 p-0 m-0 principal-card-container">
                         <div class="row p-0 m-0 justify-content-center card-container">
-                            <div class="col-4 p-0 m-0 image-container">
-                                <img class="user-image" />
+                            <div class="col-4 p-0 m-0">
+                                <div class="row p-0 m-0">
+                                    <div class="col-12 p-0 m-0 image-container">
+                                        <img class="user-image" />
+                                    </div>
+                                </div>
+                                <div class="col-12 p-0 m-0">
+                                    <input type="text" class="form-control text-center document-text-container" value="@Model.empDocument" />
+                                </div>
                             </div>
                             <div class="col-8 p-0 m-0 data-container">
                                 <div class="row m-0 p-0 justify-content-around row-data-container">
@@ -25,8 +32,8 @@
                                             <input type="text" class="form-control" value="@Model.empName" />
                                         </div>
                                         <div class="input-form-container">
-                                            <label>Document:</label>
-                                            <input type="text" class="form-control" value="@Model.empDocument" />
+                                            <label>Phone:</label>
+                                            <input type="text" class="form-control" value="@Model.empPhone" />
                                         </div>
                                     </div>
                                     <div class="col-5 p-0 m-0 col-data-container">

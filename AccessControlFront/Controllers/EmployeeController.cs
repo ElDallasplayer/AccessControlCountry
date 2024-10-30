@@ -53,6 +53,20 @@ namespace AccessControlFront.Controllers
             {
                 var resultContent = await response.Content.ReadAsStringAsync();
                 employee = JsonConvert.DeserializeObject<Employee>(resultContent);
+
+                var familyResponse = await _httpClient.GetAsync($"{_webService}Families/GetFamilyByEmpId?id={id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var resultFamilyContent = await response.Content.ReadAsStringAsync();
+                    try
+                    {
+                        List<Family> empFamily = JsonConvert.DeserializeObject<List<Family>>(resultFamilyContent);
+                    }
+                    catch (Exception ex)
+                    {
+                        Family empFamily = JsonConvert.DeserializeObject<Family>(resultFamilyContent);
+                    }
+                }
             }
 
             return View("~/Views/Employee/EditEmployee.cshtml", employee);

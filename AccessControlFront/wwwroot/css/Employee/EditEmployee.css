@@ -90,3 +90,7 @@
 .col-family-container{
     padding: 10px !important;
 }
+
+.document-text-container{
+    font-weight: bold;
+}

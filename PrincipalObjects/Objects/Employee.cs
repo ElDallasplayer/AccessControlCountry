@@ -24,6 +24,8 @@ namespace PrincipalObjects.Objects
         public bool empUseVehicle {  get; set; }
         public DateTime empBirthDay {  get; set; }
         public DateTime empStartDate {  get; set; }
+
+        public List<Family> Family {  get; set; }
         #endregion
 
         public Employee() { }

@@ -50,6 +50,7 @@
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="HttpObjects\HttpUser.cs" />
     <Compile Include="Objects\Employee.cs" />
+    <Compile Include="Objects\Family.cs" />
     <Compile Include="Objects\GlobalOptions.cs" />
     <Compile Include="Objects\State.cs" />
     <Compile Include="Objects\User.cs" />
