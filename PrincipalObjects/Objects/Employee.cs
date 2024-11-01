@@ -9,23 +9,21 @@ using System.Threading.Tasks;
 
 namespace PrincipalObjects.Objects
 {
-    public class Employee
+    public class Employee : Entity
     {
         #region Properties
-        public string empId {  get; set; }
-        public string empName {  get; set; }
-        public string empSurname {  get; set; }
-        public string empDocument {  get; set; }
-        public string empPhone {  get; set; }
-        public string empDetails {  get; set; }
-        public int empAdress {  get; set; }
-        public int empState {  get; set; }
-        public bool empEnabledAccess {  get; set; }
-        public bool empUseVehicle {  get; set; }
-        public DateTime empBirthDay {  get; set; }
-        public DateTime empStartDate {  get; set; }
-
-        public List<Family> Family {  get; set; }
+        //public string empId {  get; set; } => CHANGE THIS TO GUID
+        public string empName { get; set; }
+        public string empSurname { get; set; }
+        public string empDocument { get; set; }
+        public string empPhone { get; set; }
+        public string empDetails { get; set; }
+        public int empAdress { get; set; }
+        public int empState { get; set; }
+        public bool empEnabledAccess { get; set; }
+        public bool empUseVehicle { get; set; }
+        public DateTime empBirthDay { get; set; }
+        public DateTime empStartDate { get; set; }
         #endregion
 
         public Employee() { }
