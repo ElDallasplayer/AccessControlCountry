@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace PrincipalObjects.Objects
 {
-    public class Employee
+    public class Employee : Entity
     {
         #region Properties
-        public string empId {  get; set; }
+        //public string empId {  get; set; } => CHANGE THIS TO GUID
         public string empName {  get; set; }
         public string empSurname {  get; set; }
         public string empDocument {  get; set; }

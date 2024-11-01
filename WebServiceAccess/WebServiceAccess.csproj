@@ -16,4 +16,8 @@
     <ProjectReference Include="..\PrincipalObjects\PrincipalObjects.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Properties\" />
+  </ItemGroup>
+
 </Project>
