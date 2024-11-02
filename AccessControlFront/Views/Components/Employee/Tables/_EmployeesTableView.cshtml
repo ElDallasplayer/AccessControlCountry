@@ -17,7 +17,7 @@
     function onRowSelected(args) {
         console.log("Selected:", args.data);
         $.ajax({ 
-            url : _baseUrl + "/Employee/EditEmployee?id=" + args.data.empId,
+            url : _baseUrl + "/Employee/EditEmployee?id=" + args.data.id,
             type: "get",
             success: function (response) {
                 $(".edit-container").append(response);

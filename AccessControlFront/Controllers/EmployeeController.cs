@@ -44,7 +44,7 @@ namespace AccessControlFront.Controllers
             return View("~/Views/Components/Employee/Tables/_EmployeesTableView.cshtml", employeeList);
         }
 
-        public async Task<IActionResult> EditEmployee(int id)
+        public async Task<IActionResult> EditEmployee(Guid id)
         {
             var response = await _httpClient.GetAsync($"{_webService}Employees/GetEmployeeById?id={id}");
             Employee employee = new Employee();
@@ -70,6 +70,13 @@ namespace AccessControlFront.Controllers
             }
 
             return View("~/Views/Employee/EditEmployee.cshtml", employee);
+        }
+
+        public async Task<IActionResult> CreateEmployee()
+        {
+            Employee employee = new Employee();
+            
+            return View("~/Views/Employee/CreateEmployee.cshtml", employee);
         }
     }
 }

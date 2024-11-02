@@ -35,7 +35,7 @@ namespace WebServiceAccess.Controllers
         }
 
         [HttpGet("GetEmployeeById",Name = "GetEmployeeById")]
-        public async Task<IActionResult> GetEmployeeById(int id)
+        public async Task<IActionResult> GetEmployeeById(Guid id)
         {
             try
             {
