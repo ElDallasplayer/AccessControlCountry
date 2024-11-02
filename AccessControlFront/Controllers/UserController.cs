@@ -31,15 +31,6 @@ namespace AccessControlFront.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //await CreateUserAPI(new User()
-            //{
-            //    userName = "Admin",
-            //    passwordAsString = "Admin",
-            //    userPassword = null,
-            //    userPermissions = 1,
-            //    userRol = 1
-            //});
-
             return View();
         }
 

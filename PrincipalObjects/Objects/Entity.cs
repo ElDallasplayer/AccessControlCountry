@@ -1,5 +1,6 @@
 ﻿#region Dependencies
 using System;
+using Newtonsoft.Json;
 #endregion
 
 namespace PrincipalObjects.Objects
@@ -7,6 +8,7 @@ namespace PrincipalObjects.Objects
     public class Entity : IEquatable<Entity>
     {
         #region Properties
+        [JsonProperty("id")]
         public Guid Id { get; private set; }
         #endregion
 
@@ -27,7 +29,7 @@ namespace PrincipalObjects.Objects
 
         public static bool operator ==(Entity left, Entity right)
         {
-            return left?.Id == right.Id;
+            return (left?.Id ?? null) == (right?.Id ?? null);
         }
 
         public static bool operator !=(Entity left, Entity right)

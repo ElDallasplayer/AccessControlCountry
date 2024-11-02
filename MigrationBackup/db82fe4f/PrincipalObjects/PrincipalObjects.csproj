@@ -59,12 +59,7 @@
     <Compile Include="Security.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper">
-      <Version>2.1.35</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.3</Version>
-    </PackageReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

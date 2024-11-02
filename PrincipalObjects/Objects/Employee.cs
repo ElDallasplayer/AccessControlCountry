@@ -12,7 +12,7 @@ namespace PrincipalObjects.Objects
     public class Employee : Entity
     {
         #region Properties
-        //public string empId {  get; set; } => CHANGE THIS TO GUID
+        //public string empId {  get; set; } => CHANGE THIS TO UUID
         public string empName { get; set; }
         public string empSurname { get; set; }
         public string empDocument { get; set; }
@@ -32,7 +32,7 @@ namespace PrincipalObjects.Objects
         {
             try
             {
-                var query = "SELECT empId, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees";
+                var query = "SELECT id, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees";
 
                 using (var connection = DatabaseConnection.GetConnection())
                 {
@@ -51,7 +51,7 @@ namespace PrincipalObjects.Objects
         {
             try
             {
-                var query = $"SELECT empId, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees WHERE empId = {id}";
+                var query = $"SELECT id, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees WHERE empId = {id}";
 
                 using (var connection = DatabaseConnection.GetConnection())
                 {
@@ -65,5 +65,24 @@ namespace PrincipalObjects.Objects
                 return null;
             }
         }
+
+        //public async Task<Employee> InsertEmployee(Employee empToInsert)
+        //{
+        //    try
+        //    {
+        //        var query = $"SELECT id, empName, empSurname, empDocument, empPhone, empDetails, empAddress, empState, empEnabledAccess, empUseVehicle, empBirthDay, empStartDate FROM Employees WHERE empId = {id}";
+
+        //        using (var connection = DatabaseConnection.GetConnection())
+        //        {
+        //            await connection.OpenAsync();
+        //            var employees = await connection.QuerySingleAsync<Employee>(query);
+        //            return employees;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return null;
+        //    }
+        //}
     }
 }
